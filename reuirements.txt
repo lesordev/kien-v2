@@ -1,0 +1,11 @@
+tk
+Pillow==9.0.1
+opencv-python==4.5.5.62
+mediapipe
+opencv-python
+scikit-learn
+pandas
+numpy
+seaborn
+SpeechRecognition
+pyaudio
