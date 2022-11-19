@@ -85,7 +85,6 @@ speech_text.place(x=10, y=100)
 image_box = tk.Frame(speech_to_text_window, width=450, height=450)
 image_box.pack()
 image_box.place(x=350, y=0)
-img = Image.open('camon.png').resize((450, 450), Image.ANTIALIAS)
 image_label = tk.Label(image_box)
 image_label.pack(side='right')
 
@@ -179,7 +178,7 @@ def speech_to_text():
             print(text_map[str(text).lower()])
 
             img_path = text_map[str(text).lower()]
-            img = Image.open('camon.png').resize((450, 450), Image.ANTIALIAS)
+            img = Image.open('./assets/' + img_path).resize((450, 450), Image.ANTIALIAS)
             imgtk = ImageTk.PhotoImage(image=img)
 
             global image_label
